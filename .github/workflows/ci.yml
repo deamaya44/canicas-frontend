@@ -20,7 +20,7 @@ jobs:
 
       - uses: docker/build-push-action@v5
         with:
-          context: ./frontend
+          context: .
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/canicas-frontend:latest
           build-args: |
